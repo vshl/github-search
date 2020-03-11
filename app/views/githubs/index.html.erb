@@ -7,10 +7,12 @@
   <%= submit_tag ("Search") %>
 <% end %>
 
-<% @githubs['items'].each do |item| %>
-  <ul>
-    <li><%= link_to item['full_name'], url_for(item['html_url']) %>
-    <%= ", #{item['description']}" %>
-    <br>
-  </ul>
+<% if @githubs.present? %>
+  <% @githubs['items'].each do |item| %>
+    <ul>
+      <li><%= link_to item['full_name'], url_for(item['html_url']) %>
+      <%= ", #{item['description']}" %>
+      <br>
+    </ul>
+  <% end %>
 <% end %>
