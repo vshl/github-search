@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Github Repo Search</h1>
+<h1><%= link_to 'Github Repo Search', root_path %></h1>
 
 <%= form_tag(githubs_path, method: :get) do %>
   <%= text_field_tag(:search, params[:search], required: true) %>
