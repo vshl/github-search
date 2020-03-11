@@ -48,4 +48,9 @@ gem install bundler -v 1.17.2
 
     `bundle exec rails s`
 
-4. Open web browser at https://localhost:3000
+4. Open web browser at http://localhost:3000
+
+### Usage
+
+Use text box to search for Github public repos, results will be shown under the
+text box
